@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#clockContainer{
+    position: relative;
+    /* contain: content; */
+    margin: auto;
+    max-width: 400px;
+    max-height: 400px;
+    width: 20vw;
+    height: 20vw;
+    border: 1px solid #333;
+    background-color: rgb(164, 164, 164);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#hour,
+#minute,
+#second{
+    position: absolute;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    left: 50%;
+    margin-left: -2px;
+}
+#hour{
+    z-index: 5;
+    width: 4px;
+    height: 65px;
+    top: 58px;
+    background: #333;
+    transform-origin: 50% 72px;
+}
+#minute{
+  z-index: 6;
+  width: 4px;
+  height: 100px;
+  top: 25px;
+  background: #c61e1e;
+  transform-origin: 50% 105px;
+}
+#second{
+    z-index: 7;
+    width: 2px;
+    height: 120px;
+    background: rgb(208, 171, 26);
+    top: 5px;
+    margin-left: -1px;
+    transform-origin: 50% 125px;
+}
+#dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 2px 4px -1px black;
+}
+span {
+    display: inline-block;
+    position: absolute;
+    color: #333;
+    font-size: 22px;
+    font-family: 'Poiret One';
+    font-weight: 700;
+    z-index: 4;
+  }
+
+  .h12 {
+    top: 5px;
+    left: 50%;
+    margin-left: -9px;
+  }
+  .h3 {
+    top: 116px;
+    right: 5px;
+  }
+  .h6 {
+    bottom: 5px;
+    left: 50%;
+    margin-left: -6px;
+  }
+  .h9 {
+    left: 5px;
+    top: 118px;
+  } 
+.dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #696868;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 2px 4px -1px black;
+}
+#h1{
+  top: 23.8px;
+   right: 60px;
+}
+#h2{
+  top: 75px;
+   right: 20px;
+}
+#h4{
+  top: 175px;
+   right: 20px;
+}
+#h5{
+  bottom: 24px;
+   right: 60px;
+}
+#h7{
+  bottom: 24px;
+   left: 60px;
+}
+#h8{
+  top: 175px;
+   left: 20px;
+}
+#h10{
+  top: 75px;
+  left: 20px;
+}
+#h11{
+  top: 23.8px;
+   left: 60px;
+}
+@media (max-width:600px) {
+  #clockContainer{
+    width: 95vw;
+        max-width: 320px;
+        height: 95vw;
+        max-height: 320px;
+  }
+  #hour{
+    height: 95px;
+    top:120px;
+    transform-origin: 50% 100px;
+  }
+  #minute{
+    height: 140px;
+  top: 50px;
+  transform-origin: 50% 160px;
+}
+#second{
+  height: 200px;
+  top: 35px;
+  transform-origin: 50% 190px;
+}
+#dot{
+  width: 30px;
+  height: 30px;
+}
+span {
+  font-size: 40px;
+}
+.h12 {
+  margin-left: -12px;
+}
+.h3 {
+  top: 200px;
+}
+.h9 {
+  top: 200px;
+} 
+.dot{
+  width: 20px;
+  height: 20px;
+}
+#h1{
+  top: 40px;
+   right: 110px;
+}
+#h2{
+  top: 120px;
+   right: 30px;
+}
+#h4{
+  bottom: -20px;
+   right: 30px;
+}
+#h5{
+  bottom: 40px;
+   right: 110px;
+}
+#h7{
+  bottom: 40px;
+   left: 110px;
+}
+#h8{
+  bottom: -20px;
+  left: 30px;
+}
+#h10{
+  top: 120px;
+   left: 30px;
+}
+#h11{
+  top: 40px;
+   left: 110px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+  #clockContainer {
+      width: 75vw;
+      max-width: 480px;
+      height: 75vw;
+      max-height: 480px;
+  }
+  #hour{
+    height: 110px;
+    top:150px;
+    transform-origin: 50% 100px;
+  }
+  #minute{
+    height: 180px;
+  top: 60px;
+  transform-origin: 50% 180px;
+}
+#second{
+  height: 200px;
+  top: 45px;
+  transform-origin: 50% 190px;
+}
+#dot{
+  width: 35px;
+  height: 35px;
+}
+span {
+  font-size: 50px;
+}
+.h12 {
+  margin-left: -25px;
+}
+.h3 {
+  top: 205px;
+}
+.h6{
+  margin-left: -18px;
+}
+.h9 {
+  top: 205px;
+}
+.dot{
+  width: 25px;
+  height: 25px;
+} 
+#h1{
+  top: 40px;
+   right: 110px;
+}
+#h2{
+  top: 120px;
+   right: 30px;
+}
+#h4{
+  bottom: -20px;
+   right: 30px;
+}
+#h5{
+  bottom: 40px;
+   right: 110px;
+}
+#h7{
+  bottom: 40px;
+   left: 110px;
+}
+#h8{
+  bottom: -20px;
+  left: 30px;
+}
+#h10{
+  top: 120px;
+   left: 30px;
+}
+#h11{
+  top: 40px;
+   left: 110px;
+}
+}
+
+
+
+
+
